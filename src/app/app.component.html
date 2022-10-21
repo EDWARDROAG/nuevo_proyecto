@@ -327,8 +327,12 @@
 
 <div class="content" role="main">
 
+  <input type="text" placeholder="nombre de usuario"[(ngModel)]="usuario"/>
+
   <!--<h1>iniciando angular </h1> -->
-<app-Saludo nombre = "eduar"> </app-Saludo>
+<app-Saludo [name] = "usuario"> </app-Saludo>
+
+
 </div>
 
 

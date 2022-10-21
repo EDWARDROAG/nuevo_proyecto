@@ -7,7 +7,8 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class SaludoComponent implements OnInit {
 
-@Input() nombre: String = "Anonimo";
+@Input() name: String = "Anonimo";
+@Input() apellido: String = "roa garcia";
 
   constructor() { }
 
@@ -17,4 +18,8 @@ export class SaludoComponent implements OnInit {
 
   }
 
+  alertGreeting(): void{
+      alert (`hola, ${this.name}.alerta boton`);
+
+  }
 }
